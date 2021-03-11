@@ -1,0 +1,21 @@
+<!-- <mat-form-field appearance='fill'>
+    <mat-label>Favriote Food</mat-label>
+    <mat-select>
+        <mat-option *ngFor = 'let food of foods' [value]='food.value'>
+            {{food.viewValue}}
+        </mat-option>
+    </mat-select>
+    
+    
+</mat-form-field> -->
+
+<mat-form-field appearance='fill'>
+    <mat-label>Items</mat-label>
+    <mat-select>
+        <cdk-virtual-scroll-viewport itemSize='50' class='dropdown-viewport'>
+            <mat-option *cdkVirtualFor='let item of items' class='dropdown-item' [value]='item.title'>
+                {{item.title}}
+            </mat-option>
+        </cdk-virtual-scroll-viewport>
+    </mat-select>
+</mat-form-field>
