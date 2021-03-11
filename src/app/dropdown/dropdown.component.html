@@ -1,16 +1,16 @@
-<!-- <mat-form-field appearance='fill'>
-    <mat-label>Favriote Food</mat-label>
-    <mat-select>
-        <mat-option *ngFor = 'let food of foods' [value]='food.value'>
-            {{food.viewValue}}
-        </mat-option>
-    </mat-select>
-    
-    
-</mat-form-field> -->
+<!-- 
+cdk-virtula-scroll-viewport displays large lists of elements performantly by only rendering the items 
+that fit on-screen.
 
-<!-- cdk-virtula-scroll-viewport is used to implement the pagination in dropdwon list
-It only renders some data item in the dropdwon and as we scroll new data items are rendered. -->
+*cdkVirtualFor is used in the place of *ngFor
+
+Following imports are added in 'app.module.ts':-
+FormsModule
+ReactiveFormsModule
+MatFormFieldModule
+MatSelectModule
+ScrollingModule
+-->
 
 <mat-form-field appearance='fill'>
     <mat-label>Items</mat-label>
