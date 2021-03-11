@@ -11,6 +11,8 @@ export class DropdownDataService {
     private http: HttpClient
   ) { }
 
+  // jsonplaceholed is used for fake data.
+
   retrieveDropdownList() {
     return this.http.get<Items[]>('https://jsonplaceholder.typicode.com/todos');
   }
